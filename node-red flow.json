@@ -1,0 +1,1530 @@
+[
+    {
+        "id": "a31170be46b29099",
+        "type": "tab",
+        "label": "Flow 4",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "25d0e0cd8a239140",
+        "type": "mqtt out",
+        "z": "a31170be46b29099",
+        "name": "",
+        "topic": "suhas",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "280f0c042cb0973b",
+        "x": 870,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "806846c40647a187",
+        "type": "ui_button",
+        "z": "a31170be46b29099",
+        "name": "",
+        "group": "1ff058bae4db8a79",
+        "order": 6,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "BURGER",
+        "tooltip": "",
+        "color": "YELLOW",
+        "bgcolor": "RED",
+        "className": "",
+        "icon": "",
+        "payload": "2",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 80,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3f4f5d8c399c96f9",
+        "type": "ui_button",
+        "z": "a31170be46b29099",
+        "name": "",
+        "group": "1ff058bae4db8a79",
+        "order": 10,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "PASTA",
+        "tooltip": "",
+        "color": "#FFD700",
+        "bgcolor": "black",
+        "className": "",
+        "icon": "",
+        "payload": "3",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 80,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bb4fa30f418327e4",
+        "type": "ui_button",
+        "z": "a31170be46b29099",
+        "name": "",
+        "group": "1ff058bae4db8a79",
+        "order": 14,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "CAKE",
+        "tooltip": "",
+        "color": "#FFFACD",
+        "bgcolor": "#D2691E",
+        "className": "",
+        "icon": "",
+        "payload": "4",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 70,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ac38e3d82078e6e7",
+        "type": "ui_button",
+        "z": "a31170be46b29099",
+        "name": "",
+        "group": "1ff058bae4db8a79",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "PIZZA",
+        "tooltip": "",
+        "color": "#FF6347",
+        "bgcolor": "#FFD700",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 70,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9bac138ca296ae16",
+        "type": "ui_numeric",
+        "z": "a31170be46b29099",
+        "name": "",
+        "label": "Quantity",
+        "tooltip": "",
+        "group": "1ff058bae4db8a79",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "str",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 80,
+        "y": 60,
+        "wires": [
+            [
+                "0973c10928d5c78b"
+            ]
+        ]
+    },
+    {
+        "id": "2056b9ac2ff9c6a2",
+        "type": "ui_numeric",
+        "z": "a31170be46b29099",
+        "name": "",
+        "label": "Quantity",
+        "tooltip": "",
+        "group": "1ff058bae4db8a79",
+        "order": 7,
+        "width": 3,
+        "height": 1,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 80,
+        "y": 180,
+        "wires": [
+            [
+                "b0c21075dafb543c"
+            ]
+        ]
+    },
+    {
+        "id": "2905a70c90023606",
+        "type": "ui_numeric",
+        "z": "a31170be46b29099",
+        "name": "",
+        "label": "Quantity",
+        "tooltip": "",
+        "group": "1ff058bae4db8a79",
+        "order": 11,
+        "width": 3,
+        "height": 1,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 80,
+        "y": 300,
+        "wires": [
+            [
+                "f9dbcb768ab19e62"
+            ]
+        ]
+    },
+    {
+        "id": "13ee82ec3fc26f13",
+        "type": "ui_numeric",
+        "z": "a31170be46b29099",
+        "name": "",
+        "label": "Quantity",
+        "tooltip": "",
+        "group": "1ff058bae4db8a79",
+        "order": 15,
+        "width": 3,
+        "height": 1,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 80,
+        "y": 420,
+        "wires": [
+            [
+                "7eeb0cdf2a79cc73"
+            ]
+        ]
+    },
+    {
+        "id": "cf43652f4b52cc75",
+        "type": "ui_dropdown",
+        "z": "a31170be46b29099",
+        "name": "",
+        "label": "Type :",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "1ff058bae4db8a79",
+        "order": 4,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "None",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "NON VEG PIZZA",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "VEG PIZZA",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 70,
+        "y": 100,
+        "wires": [
+            [
+                "a9e244f18f34eef2"
+            ]
+        ]
+    },
+    {
+        "id": "fcb44a888ab6cfb7",
+        "type": "ui_dropdown",
+        "z": "a31170be46b29099",
+        "name": "",
+        "label": "Type :",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "1ff058bae4db8a79",
+        "order": 8,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "None",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "NON VEG BURGER",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "VEG BURGER",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 70,
+        "y": 220,
+        "wires": [
+            [
+                "128a7bd25dfc0469"
+            ]
+        ]
+    },
+    {
+        "id": "bee57f1fe9ab683c",
+        "type": "ui_dropdown",
+        "z": "a31170be46b29099",
+        "name": "",
+        "label": "Type :",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "1ff058bae4db8a79",
+        "order": 12,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "None",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "RED SAUCE PASTA",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "WHITE SAUCE PASTA",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 70,
+        "y": 340,
+        "wires": [
+            [
+                "f23c37828c990aac"
+            ]
+        ]
+    },
+    {
+        "id": "eb18226cb53e7c39",
+        "type": "ui_dropdown",
+        "z": "a31170be46b29099",
+        "name": "",
+        "label": "Type :",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "1ff058bae4db8a79",
+        "order": 16,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "None",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "BLACKFOREST",
+                "type": "str"
+            },
+            {
+                "label": "",
+                "value": "CHOCO LAVA",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 70,
+        "y": 460,
+        "wires": [
+            [
+                "35e03f4837875914"
+            ]
+        ]
+    },
+    {
+        "id": "55cd967b4fe6a42b",
+        "type": "ui_button",
+        "z": "a31170be46b29099",
+        "name": "",
+        "group": "1ff058bae4db8a79",
+        "order": 20,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "CANCEL",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "RED",
+        "className": "",
+        "icon": "highlight_off",
+        "payload": "cancel",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 760,
+        "y": 340,
+        "wires": [
+            [
+                "6e040b405b27336f"
+            ]
+        ]
+    },
+    {
+        "id": "65947eea49cad2e8",
+        "type": "ui_button",
+        "z": "a31170be46b29099",
+        "name": "",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 1,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "NON VEG PIZZA",
+        "tooltip": "",
+        "color": "WHITE",
+        "bgcolor": "#DC3545",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 530,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9125d308982d6ca6",
+        "type": "ui_button",
+        "z": "a31170be46b29099",
+        "name": "",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 9,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "NON VEG BURGER ",
+        "tooltip": "",
+        "color": "WHITE",
+        "bgcolor": "#DC3545",
+        "className": "",
+        "icon": "",
+        "payload": "2",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 540,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "26dbe61c86b04dd0",
+        "type": "ui_button",
+        "z": "a31170be46b29099",
+        "name": "",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 2,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "VEG PIZZA ",
+        "tooltip": "",
+        "color": "WHITE",
+        "bgcolor": "#28A745",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 510,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "be75da4e16df7d59",
+        "type": "ui_button",
+        "z": "a31170be46b29099",
+        "name": "",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 10,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "VEG BURGER ",
+        "tooltip": "",
+        "color": "WHITE",
+        "bgcolor": "#28A745",
+        "className": "",
+        "icon": "",
+        "payload": "2",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 520,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b5680db7270ea6fc",
+        "type": "ui_button",
+        "z": "a31170be46b29099",
+        "name": "",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 17,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "RED SAUCE PASTA",
+        "tooltip": "",
+        "color": "WHITE",
+        "bgcolor": "#DC3545",
+        "className": "",
+        "icon": "",
+        "payload": "3",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 540,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "99f51dc2642e4e9d",
+        "type": "ui_button",
+        "z": "a31170be46b29099",
+        "name": "",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 18,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "WHITE SAUCE PASTA  ",
+        "tooltip": "",
+        "color": "GREEN",
+        "bgcolor": "WHITE",
+        "className": "",
+        "icon": "",
+        "payload": "3",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 550,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ddabaed0e0d0d842",
+        "type": "ui_button",
+        "z": "a31170be46b29099",
+        "name": "",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 26,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "CHOCO LAVA ",
+        "tooltip": "",
+        "color": "#F5F5DC",
+        "bgcolor": "#654321",
+        "className": "",
+        "icon": "",
+        "payload": "4",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 100,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4f81ffd032340883",
+        "type": "ui_button",
+        "z": "a31170be46b29099",
+        "name": "",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 25,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "BLACKFOREST ",
+        "tooltip": "",
+        "color": "#F5F5DC",
+        "bgcolor": "#3E2723",
+        "className": "",
+        "icon": "",
+        "payload": "4",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 100,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "17bc2f547da80581",
+        "type": "ui_text_input",
+        "z": "a31170be46b29099",
+        "name": "",
+        "label": "Cost: 149/-",
+        "tooltip": "",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 4,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 510,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "259c1f8b20b7fac3",
+        "type": "ui_text_input",
+        "z": "a31170be46b29099",
+        "name": "",
+        "label": "Cost: 129/-",
+        "tooltip": "",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 6,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 510,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d5be5ce4a862c0ce",
+        "type": "ui_text_input",
+        "z": "a31170be46b29099",
+        "name": "",
+        "label": "Cost: 119/-",
+        "tooltip": "",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 12,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 510,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f6eaa82672d8a8d1",
+        "type": "ui_text_input",
+        "z": "a31170be46b29099",
+        "name": "",
+        "label": "Cost: 89/-",
+        "tooltip": "",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 22,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 500,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "31a6dfa03032e8e7",
+        "type": "ui_text_input",
+        "z": "a31170be46b29099",
+        "name": "",
+        "label": "Cost: 89/-",
+        "tooltip": "",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 14,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 500,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "48a35132b2859049",
+        "type": "ui_text_input",
+        "z": "a31170be46b29099",
+        "name": "",
+        "label": "Cost: 89/-",
+        "tooltip": "",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 20,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 500,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7abae8d3f56e8986",
+        "type": "ui_text_input",
+        "z": "a31170be46b29099",
+        "name": "",
+        "label": "Cost: 69/-",
+        "tooltip": "",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 30,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 80,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "954f958a9fc09132",
+        "type": "ui_text_input",
+        "z": "a31170be46b29099",
+        "name": "",
+        "label": "Cost: 79/-",
+        "tooltip": "",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 28,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 80,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "33dafb3aa14aa96d",
+        "type": "ui_text_input",
+        "z": "a31170be46b29099",
+        "name": "",
+        "label": "Calories:1200",
+        "tooltip": "",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 680,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "148878b882accb5c",
+        "type": "ui_text_input",
+        "z": "a31170be46b29099",
+        "name": "",
+        "label": "Calories:1080",
+        "tooltip": "",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 7,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 680,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d72b9dd55f3cf727",
+        "type": "ui_text_input",
+        "z": "a31170be46b29099",
+        "name": "",
+        "label": "Calories:300",
+        "tooltip": "",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 21,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 670,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a0a4a65addfb255d",
+        "type": "ui_text_input",
+        "z": "a31170be46b29099",
+        "name": "",
+        "label": "Calories:250",
+        "tooltip": "",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 15,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 650,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f1144aeae3b09977",
+        "type": "ui_text_input",
+        "z": "a31170be46b29099",
+        "name": "",
+        "label": "Calories:300",
+        "tooltip": "",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 13,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 650,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d67a88adc738a94a",
+        "type": "ui_text_input",
+        "z": "a31170be46b29099",
+        "name": "",
+        "label": "Calories:400",
+        "tooltip": "",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 23,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 650,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f77b1d76a6e1e8e7",
+        "type": "ui_text_input",
+        "z": "a31170be46b29099",
+        "name": "",
+        "label": "Calories:350",
+        "tooltip": "",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 31,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 230,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f46dfb503df6fbcb",
+        "type": "ui_text_input",
+        "z": "a31170be46b29099",
+        "name": "",
+        "label": "Calories:450",
+        "tooltip": "",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 29,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 230,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f9dbcb768ab19e62",
+        "type": "function",
+        "z": "a31170be46b29099",
+        "name": "pasta quantity",
+        "func": "global.set(\"quantity_pasta\", msg.payload);",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7eeb0cdf2a79cc73",
+        "type": "function",
+        "z": "a31170be46b29099",
+        "name": "cake quantity",
+        "func": "global.set(\"quantity_cake\", msg.payload);",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f23c37828c990aac",
+        "type": "function",
+        "z": "a31170be46b29099",
+        "name": "pasta type",
+        "func": "global.set(\"type_pasta\", msg.payload);",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "35e03f4837875914",
+        "type": "function",
+        "z": "a31170be46b29099",
+        "name": "cake type",
+        "func": "global.set(\"type_cake\", msg.payload);",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8283d1976b6f3b79",
+        "type": "ui_toast",
+        "z": "a31170be46b29099",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 910,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "528db0e82714eadc",
+        "type": "ui_button",
+        "z": "a31170be46b29099",
+        "name": "",
+        "group": "1ff058bae4db8a79",
+        "order": 19,
+        "width": 5,
+        "height": 1,
+        "passthru": true,
+        "label": "SUBMIT",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "GREEN",
+        "className": "",
+        "icon": "done_all",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 880,
+        "y": 140,
+        "wires": [
+            [
+                "7cb23f6a0cde1bee"
+            ]
+        ]
+    },
+    {
+        "id": "0973c10928d5c78b",
+        "type": "function",
+        "z": "a31170be46b29099",
+        "name": "pizza quantity",
+        "func": "\nglobal.set(\"quantity_pizza\", msg.payload);",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a9e244f18f34eef2",
+        "type": "function",
+        "z": "a31170be46b29099",
+        "name": "pizza type",
+        "func": "global.set(\"type_pizza\", msg.payload);\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b0c21075dafb543c",
+        "type": "function",
+        "z": "a31170be46b29099",
+        "name": "burger quantity",
+        "func": "\nglobal.set(\"quantity_burger\", msg.payload);",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "128a7bd25dfc0469",
+        "type": "function",
+        "z": "a31170be46b29099",
+        "name": "burger type",
+        "func": "\nglobal.set(\"type_burger\", msg.payload);\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7cb23f6a0cde1bee",
+        "type": "function",
+        "z": "a31170be46b29099",
+        "name": "join all payloads",
+        "func": "let quantity_pizza = global.get('quantity_pizza')||0;\nlet type_pizza= global.get('type_pizza')||'';\nlet quantity_burger= global.get('quantity_burger')||0;\nlet type_burger= global.get('type_burger')||'';\nlet quantity_pasta=global.get('quantity_pasta')||0;\nlet type_pasta=global.get('type_pasta')||'';\nlet quantity_cake=global.get('quantity_cake')||0;\nlet type_cake=global.get('type_cake')||'';\nlet employeeId=global.get('employeeId')||0;\n\nvar output = {\n    quantity_pizza : quantity_pizza,\n    type_pizza : type_pizza,\n    quantity_burger : quantity_burger,\n    type_burger : type_burger,\n    quantity_pasta : quantity_pasta,\n    type_pasta : type_pasta,\n    quantity_cake : quantity_cake,\n    type_cake : type_cake,\n    employeeId : employeeId\n};\nif(quantity_pizza>4){\n     node.send({ payload: \"Pizza is unavailable please reduce the quantity\" });\n    return null;\n}\nif(quantity_burger>4){\n     node.send({ payload: \"Burger is unavailable please reduce the quantity\" });\n    return null;\n}\nif(quantity_pasta>4){\n     node.send({ payload: \"Pasta is unavailable please reduce the quantity.\" });\n    return null;\n}\nif(quantity_cake>4){\n     node.send({ payload: \"Cake is unavailable  please reduce the quantity\" });\n    return null;\n}\nif(employeeId<100 || employeeId>129){\n    node.send({ payload: \"Enter valid EMPLOYEE ID\" });\n    return null;\n}\nelse{\n     msg.payload = output;\n    return msg;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 40,
+        "wires": [
+            [
+                "8283d1976b6f3b79",
+                "25d0e0cd8a239140"
+            ]
+        ]
+    },
+    {
+        "id": "5fefcb02f65a3b8e",
+        "type": "function",
+        "z": "a31170be46b29099",
+        "name": "employee id",
+        "func": "global.set(\"employeeId\", msg.payload);",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2f818b5acd511310",
+        "type": "ui_text_input",
+        "z": "a31170be46b29099",
+        "name": "",
+        "label": "Enter Employee ID",
+        "tooltip": "",
+        "group": "1ff058bae4db8a79",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 510,
+        "y": 120,
+        "wires": [
+            [
+                "5fefcb02f65a3b8e"
+            ]
+        ]
+    },
+    {
+        "id": "6e040b405b27336f",
+        "type": "function",
+        "z": "a31170be46b29099",
+        "name": "function 2",
+        "func": "if (msg.payload === \"cancel\") {\n    // Reset global variables to their default values\n    global.set('quantity_pizza', 0);\n    global.set('type_pizza', '');\n    global.set('quantity_burger', 0);\n    global.set('type_burger', '');\n    global.set('quantity_pasta', 0);\n    global.set('type_pasta', '');\n    global.set('quantity_cake', 0);\n    global.set('type_cake', '');\n    global.set('employeeId', '');\n    msg.payload = \"All values have been reset.\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e8a632c78389c98d",
+        "type": "function",
+        "z": "a31170be46b29099",
+        "name": "function 3",
+        "func": "msg.payload = {\n    clearinputs: true\n};\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "39c266c94a9417b6",
+        "type": "ui_spacer",
+        "z": "a31170be46b29099",
+        "name": "spacer",
+        "group": "1ff058bae4db8a79",
+        "order": 5,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "33214aecd1e69d70",
+        "type": "ui_spacer",
+        "z": "a31170be46b29099",
+        "name": "spacer",
+        "group": "1ff058bae4db8a79",
+        "order": 9,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "80be1c8862e58336",
+        "type": "ui_spacer",
+        "z": "a31170be46b29099",
+        "name": "spacer",
+        "group": "1ff058bae4db8a79",
+        "order": 13,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "e9a2e8d13f5499cc",
+        "type": "ui_spacer",
+        "z": "a31170be46b29099",
+        "name": "spacer",
+        "group": "1ff058bae4db8a79",
+        "order": 17,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "17eb3426a0d44e6d",
+        "type": "ui_spacer",
+        "z": "a31170be46b29099",
+        "name": "spacer",
+        "group": "1ff058bae4db8a79",
+        "order": 18,
+        "width": 13,
+        "height": 1
+    },
+    {
+        "id": "ac29245e7ce3a3cd",
+        "type": "ui_spacer",
+        "z": "a31170be46b29099",
+        "name": "spacer",
+        "group": "1ff058bae4db8a79",
+        "order": 21,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "c4fc44c04b53f92e",
+        "type": "ui_spacer",
+        "z": "a31170be46b29099",
+        "name": "spacer",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c8850ede69d63abc",
+        "type": "ui_spacer",
+        "z": "a31170be46b29099",
+        "name": "spacer",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c8cce3e5d0e99cab",
+        "type": "ui_spacer",
+        "z": "a31170be46b29099",
+        "name": "spacer",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8e61305c20e119c2",
+        "type": "ui_spacer",
+        "z": "a31170be46b29099",
+        "name": "spacer",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 16,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "063a611a30246ca1",
+        "type": "ui_spacer",
+        "z": "a31170be46b29099",
+        "name": "spacer",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 19,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "866c83cc9ad041c9",
+        "type": "ui_spacer",
+        "z": "a31170be46b29099",
+        "name": "spacer",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 24,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c9f941d6a3cb921e",
+        "type": "ui_spacer",
+        "z": "a31170be46b29099",
+        "name": "spacer",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 27,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3e968d428af45ac0",
+        "type": "ui_spacer",
+        "z": "a31170be46b29099",
+        "name": "spacer",
+        "group": "a2ac8ea37e4df6b5",
+        "order": 32,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "280f0c042cb0973b",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.emqx.io",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "1ff058bae4db8a79",
+        "type": "ui_group",
+        "name": "SIGN IN AND CHOOSE YOUR SNACK",
+        "tab": "e07c4ce468f97157",
+        "order": 1,
+        "disp": true,
+        "width": "13",
+        "collapse": false,
+        "className": "amazon"
+    },
+    {
+        "id": "a2ac8ea37e4df6b5",
+        "type": "ui_group",
+        "name": "MENU",
+        "tab": "e07c4ce468f97157",
+        "order": 2,
+        "disp": true,
+        "width": "11",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e07c4ce468f97157",
+        "type": "ui_tab",
+        "name": "SNACKS",
+        "icon": "amazon",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    }
+]
